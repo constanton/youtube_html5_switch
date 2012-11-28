@@ -6,7 +6,7 @@ This is a very simple Firefox Add-on that adds the "html5=1" parameter inside th
 
 ## Improvements to be made
 
-* Obviously mani...
+* Obviously many but for starters let's...
 * Create a logo and an icon for the widget
 * Automatically change the URL without a widget.
 
