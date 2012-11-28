@@ -5,8 +5,8 @@ This is a very simple Firefox Add-on that adds the "html5=1" parameter inside th
 
 
 ## Improvements to be made
-There are a few different ways you can install pyechonest:
 
+* Obviously mani...
 * Create a logo and an icon for the widget
 * Automatically change the URL without a widget.
 
