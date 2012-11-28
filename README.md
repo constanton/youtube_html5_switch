@@ -1,6 +1,8 @@
 YouTube HTML5 Switch
 ================================
 
+[http://github.com/constanton/youtube_html5_switch/blob/master/data/html5switch100.jpeg]
+
 This is a very simple Firefox Add-on that adds the "html5=1" parameter inside the address bar of the tab that is currently active. Only with a simple click on the widget.
 
 
