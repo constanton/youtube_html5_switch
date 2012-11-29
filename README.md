@@ -15,6 +15,9 @@ Right now we have:
 * It works only when youtube.com/watch has been opened
 * It doesn't work if &html5=1 is already in the URL
 
+##Known problem
+
+*If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click the URL of X will change to previously used YouTube URL.
 
 ## Features to be added
 
