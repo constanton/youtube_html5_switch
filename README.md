@@ -17,7 +17,7 @@ Right now we have:
 
 ##Known problem
 
-*If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click the URL of X will change to previously used YouTube URL.
+* If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click the URL of X will change to previously used YouTube URL.
 
 ## Features to be added
 
