@@ -20,6 +20,7 @@ Right now we have:
 
 Obviously there is much to do but for starters let's...
 
+* When user changes to already open tabs, handle the url correctly
 * Prompt a message in a panel box if "html5=1" has been inserted
 * Automatically change the URL without a widget.
 
