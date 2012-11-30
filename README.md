@@ -19,7 +19,7 @@ Right now we have:
 
 The Add-on is not very smart, yet. For example:
 
-* If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click the URL of X will change to previously used YouTube URL.
+* If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click of the button the URL of X will change to the previously used YouTube URL.
 
 ## Features to be added
 
