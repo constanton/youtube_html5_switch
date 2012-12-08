@@ -19,7 +19,7 @@ Right now we have:
 
 The Add-on is not very smart, yet. For example:
 
-* The button is viewed only in the window that opens first.
+* ~~The button is viewed only in the window that opens first.~~
 * If the position of the button changes, on the next restart it is placed again in the default position.
 * If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click of the button the URL of X will change to the previously used YouTube URL.
 
