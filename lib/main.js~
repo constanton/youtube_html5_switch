@@ -1,21 +1,46 @@
 //Initialize everything we need
+
 var tabs = require("tabs");
-var windows = require("windows").browserWindows;
 var widgets = require("widget");
+var toolbarbutton = require("toolbarbutton");
 var self = require("self");
 data = self.data;  
 var { MatchPattern } = require("match-pattern");
-var {Cc, Ci} = require("chrome");
-var mediator = Cc['@mozilla.org/appshell/window-mediator;1'].getService(Ci.nsIWindowMediator);
 
-//variable to store the script (string) to run when a button or widget is clicked
+//variable to store the script (string) to run when a button or widget is clicked 
 var myScript;
 
 exports.main = function() {
  
+<<<<<<< HEAD
+var options = {
+    id: "yhs-tbb",
+    label: "YouTube HTML5 Switch",
+    toolbarID: "nav-bar",
+    forceMove: true,
+    image: data.url('yhs.ico'),
+    tooltiptext: 'YouTube HTML5 Switch',
+    onCommand: function () {
+    tabs.activeTab.attach({
+              contentScript: myScript
+            }); 
+  }
+  };
+
+  var tbb = createToolbarButton(options);
+
+
+=======
   //call the function down below to add a button to the navigation bar
   addToolbarButton();
-
+  
+  //  In case a new window opens (and it's not the first one to open) add the button
+  windows.on('open', function(window) {
+   if (windows.length > 1){
+  addToolbarButton();
+   }
+ });
+>>>>>>> 14a838e7e76aa219bbf824b366ae8c476cdea8fd
   //when the tab is ready check the URL and store the proper value to myScript 
     tabs.on('ready', function(tab) {
        var tabURL = tab.url;
@@ -50,6 +75,12 @@ exports.main = function() {
     });
 };
 
+<<<<<<< HEAD
+function createToolbarButton(options) {
+  var tbb = toolbarbutton.ToolbarButton(options);
+  tbb.moveTo(options);
+  return tbb;
+=======
 
 //function to create the button on the navigation bar
 function addToolbarButton() {
@@ -71,7 +102,6 @@ function addToolbarButton() {
               contentScript: myScript
             });      
     }, false)
-    navBar.appendChild(btn);
+    navBar.appendChild(navButton);
+>>>>>>> 14a838e7e76aa219bbf824b366ae8c476cdea8fd
 }
-
-
