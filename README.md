@@ -19,6 +19,7 @@ Right now we have:
 
 The Add-on is not very smart, yet. For example:
 
+* The position of the icon goes to default after a restart of Firefox
 * If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click of the button the URL of X will change to the previously used YouTube URL.
 
 ## Features to be added
