@@ -12,25 +12,19 @@ var myScript;
 
 exports.main = function() {
  
-    var options = {
-        id: "yhs-tbb",
-        label: "YouTube HTML5 Switch",
-        toolbarID: "nav-bar",
-        image: data.url('yhs.ico'),
-        tooltiptext: 'YouTube HTML5 Switch',
-        onCommand: function () {
-        tabs.activeTab.attach({
-                  contentScript: myScript
-                }); 
-      }
-      };
-      
-      if (options.loadReason === "install") {
-        btn.moveTo({
-          toolbarID: "nav-bar",
-          forceMove: false // only move from palette
-        });
+var options = {
+    id: "yhs-tbb",
+    label: "YouTube HTML5 Switch",
+    toolbarID: "nav-bar",
+    forceMove: true,
+    image: data.url('yhs.ico'),
+    tooltiptext: 'YouTube HTML5 Switch',
+    onCommand: function () {
+    tabs.activeTab.attach({
+              contentScript: myScript
+            }); 
   }
+  };
 
   var tbb = createToolbarButton(options);
 
