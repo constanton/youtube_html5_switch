@@ -10,7 +10,7 @@ This is a very simple Firefox Add-on that adds the "html5=1" parameter inside th
 
 Right now we have:
 
-* A navigation bar button using the [toolbarbutton-jplib](https://github.com/voldsoftware/toolbarbutton-jplib) (and its depdencies) by erikvold 
+* A navigation bar button & a add-on bar button using the [toolbarbutton-jplib](https://github.com/voldsoftware/toolbarbutton-jplib) (and its depdencies) by erikvold 
 * A clickable widget icon
 * It works only when youtube.com/watch has been opened
 * It doesn't work if &html5=1 is already in the URL
@@ -19,7 +19,6 @@ Right now we have:
 
 The Add-on is not very smart, yet. For example:
 
-* The position of the icon goes to default after a restart of Firefox
 * If the Add-on is used at least once and then the user changes to a non-YouTube tab (call it X), then on the next click of the button the URL of X will change to the previously used YouTube URL.
 
 ## Features to be added
